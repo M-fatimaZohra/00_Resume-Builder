@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(auto);
+
+    font-family: "Times New Roman", Times, serif;
+    background-image: url(clove.png);
+}
+
+form{
+    width:70vw;
+    margin: 5px;
+    border: 2px solid rgb(65, 60, 60);
+    border-radius: 10px;
+    background-color:rgb(253, 240, 225);
+    box-shadow: 1px 1px 6px 5px #8b8172;
+    
+}
+fieldset{
+    margin: 30px;  
+    border-radius: 5px;
+    border: 2px ridge black;
+    
+}
+
+input.editInput, .workExperiance, .education , .skills{
+
+    border-radius: 5px;
+    border: 2px ridge black;
+    width: 100%;
+    
+
+}
+
+#submit{
+    margin: 10px;
+    float: right;
+    border: 5px inset black;
+    border-radius: 10px;
+    background-color: rgb(253, 240, 225);
+    box-shadow: 1px 1px 6px 5px rgb(142, 154, 143);
+    font-size: 20px;
+}
+
+#submit:active{
+    margin: 10px;
+    float: right;
+    border: 5px outset rgb(112, 74, 32);
+    color:white;
+    background-color:  rgb(9, 105, 33);
+    box-shadow: 1px 1px 6px 5px rgb(142, 154, 143);
+    font-size: 20px;
+}
+div.h2{
+ text-align:center;
+ background-color: rgb(9, 105, 33);
+ color:aliceblue;
+ padding:50px;
+ margin: 0;
+}
+
+textarea{
+    width:100%;
+    height:50%;
+    resize: vertical;
+}
+
+legend{
+    font-weight: 800;
+}
+
+.button{
+    margin: 10px;
+    border: 5px outset rgb(112, 74, 32);
+    color:white;
+    border-radius: 10px;
+    background-color:  rgb(9, 105, 33);
+ font-size: 20px;
+}
+
+.button:active{
+    margin: 10px;
+    border: 5px outset rgb(134, 99, 60);
+    color:white;
+    background-color:  rgb(9, 150, 44);
+ font-size: 20px;
+}
+
+.control{
+    width:100%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.result h3 {
+    text-decoration: double underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .h2 {
+        padding: 10px;
+    }
+
+    input, textarea, .button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #submit {
+        font-size: 18px;
+    }
+}
+
