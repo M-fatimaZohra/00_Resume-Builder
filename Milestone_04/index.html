@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" required content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Editable Resume Builder</title>
+</head>
+
+<body>
+  <div id="resumeInput" required>
+    <form>
+      <div class="h2"> <h2>RESUME FORM GENERATOR</h2>
+        <p>BY: FATIMA ZOHRA</p>
+      </div>
+
+
+      <fieldset>
+        <legend>PERSONAL INFO</legend>
+        <p><input class="editInput" placeholder="First Name" id="firstName" name="firstName" type="text" required></p>
+        <p><input class="editInput" placeholder="Last Name" id="lastName" name="lastName" type="text" required></p>
+        <p><input class="editInput" placeholder="Email" id="email" name="email" type="email" required></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>EDUCATION DETAILS</legend>
+        <div id="addInputEdu">
+          <p><input class="editInput" placeholder="Education" id="education" name="education" type="text" required></p>
+        </div>
+        <input type="button" class="button" id="EduAdd" value="Add" onclick="addEduCationField()">
+      </fieldset>
+
+      <fieldset>
+        <legend>WORK Experiance</legend>
+        <div id="addInputWork">
+          <p><input class="editInput" placeholder="Work Experience" id="workExperiance" name="workExperiance"
+              type="text" required></p>
+        </div>
+        <input type="button" class="button" id="WorkAdd" value="Add" onclick="addWorkField()">
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <div id="addInputSkills">
+          <p><input class="editInput" placeholder="Skill" id="skills" name="skills" type="text" required></p>
+        </div>
+        <input type="button" id="skillAdd" class="button" value="Add" onclick="addSkillField()">
+      </fieldset>
+
+      <fieldset>
+        <legend>Brief Description About Yourself</legend>
+        <p><textarea placeholder="write description under 500 characters" id="des" name="des" maxlength="500" required></textarea></p>
+      </fieldset>
+      <input type="submit" name="submit" id="submit" value="Submit" onclick="Submited()">
+   
+    </form>
+
+  </div>
+  <div id="resumeOutput" >
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
