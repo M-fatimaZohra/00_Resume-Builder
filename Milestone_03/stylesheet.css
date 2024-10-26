@@ -1,16 +1,14 @@
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: calc(auto);
-
     font-family: "Times New Roman", Times, serif;
     background-image: url(clove.png);
 }
 
 form{
-    width:70vw;
-    margin: 5px;
+ margin-left: auto;
+ margin-right: auto;
+    width:60vw;
     border: 2px solid rgb(65, 60, 60);
     border-radius: 10px;
     background-color:rgb(253, 240, 225);
@@ -99,8 +97,8 @@ legend{
 
 @media (max-width: 600px) {
     body {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         height: auto;
     }
 
