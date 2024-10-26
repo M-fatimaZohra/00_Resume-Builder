@@ -1,7 +1,5 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: calc(auto);
     font-family: "Times New Roman", Times, serif;
     background-image: url(clove.png);
@@ -9,7 +7,8 @@ body {
 
 form {
     width: 70vw;
-    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid rgb(65, 60, 60);
     border-radius: 10px;
     background-color: rgb(253, 240, 225);
